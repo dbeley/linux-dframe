@@ -2,6 +2,10 @@
 
 A simple linux digital picture frame
 
+## Requirements
+
+- feh
+
 ## Installation
 
 Create a `.env` file with this content:
@@ -9,10 +13,8 @@ Create a `.env` file with this content:
 DFRAME_FOLDER="/path/to/folder"
 ```
 
-Enable the sytemd service to run the script at boot:
+## Usage
+
 ```
-cp dframe.service ~/.config/systemd/user/
-systemctl --user daemon-reload
-systemctl --user enable --now dframe.service
-systemctl --user status dframe
+./dframe.sh
 ```
